@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  box-sizing: border-box;
+}
+
+.name-logo {
+  color: black;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.bg-gradient-light {
+  background: linear-gradient(
+    to right,
+    #1e5799 0%,
+    #a73884 19%,
+    #575398 60%,
+    #a73884 83%,
+    #1e5799 100%
+  );
+  background-size: 10000px 100%;
+  animation: bg 15s linear infinite;
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(
+    to right,
+    #000000 0%,
+    #14030f 19%,
+    #1a1919 40%,
+    #050509 60%,
+    #221f1f 83%,
+    #000000 100%
+  );
+  background-size: 10000px 100%;
+  animation: bg 15s linear infinite;
+}
+
+@keyframes bg {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 10000px;
+  }
+}
+
+.prof-container {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.glass-container-light {
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-container-dark {
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #232323 50%, #000 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.content {
+  background-color: rgba(39, 39, 39);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+} */
+
+.progressVisualFull {
+  display: flex;
+  height: 6px;
+}
+
+.progressVisualPart {
+  transition: width 2s;
+}
+
+.menu {
+  display: block;
+  transition: all, 0.5s;
+}
+
+.menu {
+  direction: ltr;
+}
+
+.animate-gradient {
+  background-size: 300%;
+  -webkit-animation: animatedgradient 6s ease infinite alternate;
+  -moz-animation: animatedgradient 6s ease infinite alternate;
+  animation: animatedgradient 6s ease infinite alternate;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
