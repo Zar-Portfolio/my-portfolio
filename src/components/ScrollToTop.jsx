@@ -29,8 +29,10 @@ const ScrollToTop = () => {
         className={`animate__animated ${
           show ? "animate__backInDown" : "animate__backOutDown "
         } group fixed ${
-          screenSize.width <= 600 ? "bottom-20" : "bottom-5"
-        }  cursor-pointer right-2 p-2 rounded-lg bg-white border-2 border-primary dark:bg-black dark:border-primary dark:border-2 z-50 hover:bg-dark group`}
+          screenSize.width <= 600
+            ? "bottom-[5.4rem] right-2"
+            : "bottom-4 right-4"
+        }  cursor-pointer  p-2 rounded-lg bg-white border-2 border-black/30 dark:border-[#0076ff] dark:bg-black dark:border-primary dark:border-2 z-50 hover:bg-dark group`}
         onClick={scrollToTop}
       >
         <PiArrowFatLinesUpLight
