@@ -3,10 +3,13 @@ import { APPDEV, BACKEND, FRONTEND, UXDESIGNER } from "../../assets/icons";
 import { TypeAnimation } from "react-type-animation";
 import { ABOUT } from "../../assets/menu-icon";
 import ProgressLine from "./ProgressLine";
+import GetScreenSize from "../GetScreenSize";
+import ScrollToContent from "../ScrollToContent";
 
-const About = () => {
+const About = ({ scrollNow, setScrollNow }) => {
   const [show, setShow] = useState(false);
   const [scroll, setScroll] = useState(false);
+  const screenSize = GetScreenSize();
 
   useEffect(() => {
     setTimeout(() => {
@@ -23,8 +26,10 @@ const About = () => {
 
   const isScroll = () => {
     const scrollTop = window.scrollY;
-    scrollTop >= 450 ? setScroll(true) : setScroll(false);
+    scrollTop >= 450 ? setScroll(true) : setScroll(false), setScrollNow(false);
   };
+
+  screenSize.width >= 600 ? "" : scrollNow ? ScrollToContent() : "";
 
   return (
     <div className="p-6">

@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 
 import { RESUME } from "../../../assets/menu-icon";
 import Education from "./Education";
 import Experience from "./Experience";
+import GetScreenSize from "../../GetScreenSize";
 
 const index = () => {
+  const screenSize = GetScreenSize();
+
+  // screenSize.width <= 600 ? "" : isSticky();
+
+  useEffect(() => {
+    window.scroll({ top: 800, left: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <div className="p-6">
       <div className="flex justify-between gap-5">

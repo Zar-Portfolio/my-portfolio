@@ -7,6 +7,7 @@ import "animate.css";
 import { AnimatePresence } from "framer-motion";
 import Transition from "./components/Transition.jsx";
 import LOGO from "../src/assets/logo2.png";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 const App = () => {
   // Darkmode Config
@@ -82,6 +83,8 @@ const App = () => {
             id="particles"
             darkMode={darkMode === "light" ? "light" : "dark"}
           />
+
+          <ScrollToTop />
         </div>
       </AnimatePresence>
     </div>

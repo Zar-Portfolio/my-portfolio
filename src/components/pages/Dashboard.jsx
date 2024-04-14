@@ -22,20 +22,22 @@ import { TiContacts } from "react-icons/ti";
 const Dashboard = ({ darkMode }) => {
   const [activePage, setActivePage] = useState("about");
   const [grow, setGrow] = useState(false);
-  const pageProps = { activePage, setActivePage };
+  const [scrollNow, setScrollNow] = useState(false);
+
+  const pageProps = { activePage, setActivePage, scrollNow, setScrollNow };
 
   const renderPage = (page) => {
     switch (page) {
       case "about":
-        return <About />;
+        return <About {...pageProps} />;
       case "resume":
-        return <Resume />;
+        return <Resume {...pageProps} />;
       case "works":
-        return <Works />;
+        return <Works {...pageProps} />;
       case "blogs":
-        return <Blogs />;
+        return <Blogs {...pageProps} />;
       case "contact":
-        return <Contact />;
+        return <Contact {...pageProps} />;
     }
   };
   return (
