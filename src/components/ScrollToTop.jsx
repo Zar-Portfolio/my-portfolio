@@ -7,13 +7,13 @@ const ScrollToTop = () => {
   const screenSize = GetScreenSize();
 
   useEffect(() => {
-    window.addEventListener("scroll", scrollDown);
+    window.addEventListener("scroll", isScroll);
     return () => {
-      window.removeEventListener("scroll", scrollDown);
+      window.removeEventListener("scroll", isScroll);
     };
   });
 
-  const scrollDown = () => {
+  const isScroll = () => {
     const top = window.scrollY;
 
     top >= 100 ? setShow(true) : setShow(false);
@@ -27,9 +27,7 @@ const ScrollToTop = () => {
     <>
       <div
         className={`animate__animated ${
-          show
-            ? "animate__backInDown opacity-100"
-            : "animate__backOutUp opacity-0"
+          show ? "animate__backInDown" : "animate__backOutDown "
         } group fixed ${
           screenSize.width <= 600 ? "bottom-20" : "bottom-5"
         }  cursor-pointer right-2 p-2 rounded-lg bg-white border-2 border-primary dark:bg-black dark:border-primary dark:border-2 z-50 hover:bg-dark group`}
