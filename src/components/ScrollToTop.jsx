@@ -27,7 +27,9 @@ const ScrollToTop = () => {
     <>
       <div
         className={`animate__animated ${
-          show ? "animate__backInDown" : "animate__backOutUp"
+          show
+            ? "animate__backInDown opacity-100"
+            : "animate__backOutUp opacity-0"
         } group fixed ${
           screenSize.width <= 600 ? "bottom-20" : "bottom-5"
         }  cursor-pointer right-2 p-2 rounded-lg bg-white border-2 border-primary dark:bg-black dark:border-primary dark:border-2 z-50 hover:bg-dark group`}
