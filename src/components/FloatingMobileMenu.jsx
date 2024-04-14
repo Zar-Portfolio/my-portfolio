@@ -15,9 +15,11 @@ const FloatingMobileMenu = ({
     <div className="w-full block md:hidden fixed bottom-0 right-1/2 translate-x-1/2 z-50 bg-white/80 p-2">
       <div className="flex flex-row items-center justify-center gap-2 pb-2 border-b-2 border-b-black/50">
         <div
-          className={`flex flex-col items-center justify-center py-2 px-4 w-16 ${
-            activePage === "about" ? "bg-[#1e5799] text-white" : "bg-gray-50/90"
-          }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:text-white`}
+          className={`flex flex-col items-center justify-center py-2 px-4 w-16 border-2  ${
+            activePage === "about"
+              ? "bg-[#1e5799] border-[#0076ff] text-white"
+              : "bg-gray-50/90 border-black/30"
+          }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:border-[#0076ff] hover:text-white`}
           onClick={() => {
             setActivePage("about");
             setScrollNow(true);
@@ -32,11 +34,11 @@ const FloatingMobileMenu = ({
         </div>
 
         <div
-          className={`flex flex-col items-center justify-center py-2 px-4 w-16 ${
+          className={`flex flex-col items-center justify-center py-2 px-4 w-16 border-2  ${
             activePage === "resume"
-              ? "bg-[#1e5799] text-white"
-              : "bg-gray-50/90"
-          }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:text-white`}
+              ? "bg-[#1e5799] border-[#0076ff] text-white"
+              : "bg-gray-50/90 border-black/30"
+          }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:border-[#0076ff] hover:text-white`}
           onClick={() => {
             setActivePage("resume");
             setScrollNow(true);
@@ -50,9 +52,11 @@ const FloatingMobileMenu = ({
         </div>
 
         <div
-          className={`flex flex-col items-center justify-center py-2 px-4 w-16 ${
-            activePage === "works" ? "bg-[#1e5799] text-white" : "bg-gray-50/90"
-          }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:text-white`}
+          className={`flex flex-col items-center justify-center py-2 px-4 w-16 border-2  ${
+            activePage === "works"
+              ? "bg-[#1e5799] border-[#0076ff] text-white"
+              : "bg-gray-50/90 border-black/30"
+          }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:border-[#0076ff] hover:text-white`}
           onClick={() => {
             setActivePage("works");
             setScrollNow(true);
@@ -66,9 +70,11 @@ const FloatingMobileMenu = ({
         </div>
 
         <div
-          className={`flex flex-col items-center justify-center py-2 px-4 w-16 ${
-            activePage === "blogs" ? "bg-[#1e5799] text-white" : "bg-gray-50/90"
-          }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:text-white`}
+          className={`flex flex-col items-center justify-center py-2 px-4 w-16 border-2  ${
+            activePage === "blogs"
+              ? "bg-[#1e5799] border-[#0076ff] text-white"
+              : "bg-gray-50/90 border-black/30"
+          }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:border-[#0076ff] hover:text-white`}
           onClick={() => {
             setActivePage("blogs");
             setScrollNow(true);
@@ -82,11 +88,11 @@ const FloatingMobileMenu = ({
         </div>
 
         <div
-          className={`flex flex-col items-center justify-center py-2 px-4 w-16 ${
+          className={`flex flex-col items-center justify-center py-2 px-4 w-16 border-2  ${
             activePage === "contact"
-              ? "bg-[#1e5799] text-white"
-              : "bg-gray-50/90"
-          }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:text-white`}
+              ? "bg-[#1e5799] border-[#0076ff] text-white"
+              : "bg-gray-50/90 border-black/30"
+          }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:border-[#0076ff] hover:text-white`}
           onClick={() => {
             setActivePage("contact");
             setScrollNow(true);
