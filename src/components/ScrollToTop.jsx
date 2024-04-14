@@ -7,13 +7,13 @@ const ScrollToTop = () => {
   const screenSize = GetScreenSize();
 
   useEffect(() => {
-    window.addEventListener("scroll", isScroll);
+    window.addEventListener("scroll", scrollDown);
     return () => {
-      window.removeEventListener("scroll", isScroll);
+      window.removeEventListener("scroll", scrollDown);
     };
   });
 
-  const isScroll = () => {
+  const scrollDown = () => {
     const top = window.scrollY;
 
     top >= 100 ? setShow(true) : setShow(false);
