@@ -28,7 +28,11 @@ const index = ({ scrollNow, setScrollNow }) => {
       <div className="flex justify-between gap-5">
         <div>
           <h1 className="text-4xl font-bold tracking-tight">
-            <TypeAnimation sequence={["Resume.", 1000]} speed={20} />
+            <TypeAnimation
+              sequence={["Resume.", 1000]}
+              speed={20}
+              className="dark:text-white/80 "
+            />
           </h1>
           <div className="border-2 w-64 border-[#1e5799] shadow-md rounded-lg mt-3"></div>
         </div>

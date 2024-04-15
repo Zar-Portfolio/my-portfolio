@@ -8,8 +8,6 @@ import { AnimatePresence } from "framer-motion";
 import Transition from "./components/Transition.jsx";
 import LOGO from "../src/assets/logo2.png";
 import ScrollToTop from "./components/ScrollToTop.jsx";
-import EARTH from "./assets/earth.png";
-import Starfield from "./components/Starfield.jsx";
 
 const App = () => {
   // Darkmode Config
@@ -36,20 +34,13 @@ const App = () => {
     <div className="relative h-screen">
       <AnimatePresence mode="wait">
         <Transition />
-
-        <Starfield
-          starCount={2000}
-          starColor={[255, 255, 255]}
-          speedFactor={0.05}
-          backgroundColor="black"
-        />
         <div
-          // className={` relative${
-          //   darkMode === "light" ? "bg-gradient-light" : "bg-gradient-dark"
-          // } w-full px-10 lg:px-20 z-10 2xl:px-40`}
-          className="relativew-full px-10 lg:px-20 z-10 2xl:px-40`"
+          className={`relative ${
+            darkMode === "light" ? "bg-gradient-light" : "bg-gradient-dark"
+          } w-full px-10 z-10 2xl:px-40`}
+          // className="relativew-full px-10 lg:px-20 z-10 2xl:px-40`"
         >
-          <div className="flex items-center justify-center pt-10">
+          <div className="flex items-center justify-between pt-10">
             <div className="flex flex-row items-center gap-2">
               <img src={LOGO} alt="" className="w-16 lg:w-24 z-30" />
               <div>
@@ -60,15 +51,12 @@ const App = () => {
                 >
                   Zardron Pesquera
                 </p>
-                <p
-                  className="text-[10px] lg:text-sm font-bold tracking-[.34em] pb-1 lg:p-0 lg:tracking-[.59em] uppercase bg-gradient-to-r from-purple-600 via-[#33bfdf] to-blue-500 
-                  text-transparent bg-clip-text animate-gradient [text-shadow:_2px_3px_0_rgb(0_0_0_/20%)]"
-                >
+                <p className="text-[10px] lg:text-sm font-bold tracking-[.34em] pb-1 lg:p-0 lg:tracking-[.59em] text-[#20d9db] uppercase [text-shadow:_1px_2px_0_rgb(0_0_0_/100%)]">
                   I turn coffee into code.
                 </p>
               </div>
             </div>
-            {/* <Button
+            <Button
               color={`bg-white hover:scale-110 z-30 ${
                 darkMode === "light" ? " border-black" : "border-[#ff9901] "
               }`}
@@ -87,15 +75,15 @@ const App = () => {
                 />
               }
               name=""
-            /> */}
+            />
           </div>
 
           <Dashboard darkMode={darkMode} />
-          {/* 
+
           <ParticlesComponent
             id="particles"
             darkMode={darkMode === "light" ? "light" : "dark"}
-          /> */}
+          />
 
           <ScrollToTop />
         </div>

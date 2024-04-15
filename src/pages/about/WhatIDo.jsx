@@ -7,7 +7,7 @@ const WhatIDo = () => {
       <h1 className="text-xl font-bold mb-2 dark:text-white/80">What I Do!</h1>
 
       <div className="w-full flex flex-col lg:flex-row gap-2 ">
-        <div className="flex flex-1 gap-2 bg-orange-100/50 p-4 rounded-md h-full">
+        <div className="flex flex-1 gap-2 bg-orange-100/80 p-4 rounded-md h-full">
           <div className="w-[20%]">
             <img src={FRONTEND} alt="" className="w-[500px]" />
           </div>
@@ -62,7 +62,7 @@ const WhatIDo = () => {
           </div>
         </div>
 
-        <div className="flex flex-1 gap-2 bg-orange-100/50 p-4 rounded-md h-full">
+        <div className="flex flex-1 gap-2 bg-orange-100/80 p-4 rounded-md h-full">
           <div className="w-[20%]">
             <img src={APPDEV} alt="" className="w-[500px]" />
           </div>

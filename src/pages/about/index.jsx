@@ -31,7 +31,7 @@ const index = ({ scrollNow, setScrollNow }) => {
             <TypeAnimation
               sequence={["About."]}
               speed={0.5}
-              className="text-white/80 "
+              className="dark:text-white/80 "
             />
           </h1>
           <div className="border-2 w-64 border-[#1e5799] shadow-md rounded-lg mt-3"></div>

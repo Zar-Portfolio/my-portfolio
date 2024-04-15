@@ -47,13 +47,13 @@ const ParticlesComponent = (props) => {
       },
       particles: {
         color: {
-          value: "#373030",
+          value: ["#000"],
         },
         links: {
-          value: ["#2EB67D", "#ECB22E", "#E01E5B", "#36C5F0"],
+          value: ["#fff"],
           distance: 150,
           enable: true,
-          opacity: 1,
+          opacity: 0.5,
           width: 0.8,
         },
         move: {
@@ -67,7 +67,7 @@ const ParticlesComponent = (props) => {
           straight: false,
         },
         number: {
-          value: 80,
+          value: 200,
           density: {
             enable: true,
             area: 800,
@@ -80,7 +80,7 @@ const ParticlesComponent = (props) => {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 8 },
+          value: { min: 1, max: 3 },
         },
       },
       detectRetina: true,
