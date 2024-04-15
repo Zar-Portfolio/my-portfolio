@@ -147,7 +147,8 @@ export default function Starfield(props) {
         opacity: 1,
         pointerEvents: "none",
         mixBlendMode: "screen",
+        overflow: "hidden",
       }}
-    ></canvas>
+    />
   );
 }
