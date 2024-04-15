@@ -12,8 +12,8 @@ const FloatingMobileMenu = ({
   setScrollNow,
 }) => {
   return (
-    <div className="w-full block md:hidden fixed bottom-0 right-1/2 translate-x-1/2 z-50 bg-white/80 dark:bg-black/90 border-t-2 shadow-md dark:border-t-[#0076ff]/40 p-2">
-      <div className="flex flex-row items-center justify-center gap-2 pb-2 border-b-2 border-b-black/30 dark:border-b-[#0076ff]/40">
+    <div className="w-full block md:hidden fixed bottom-0 right-1/2 translate-x-1/2 z-50 bg-black/80 border-t-2 border-t-white/30 shadow-md p-2">
+      <div className="flex flex-row items-center justify-center gap-2 pb-2 border-b-2 border-b-white/30">
         <div
           className={`flex flex-col items-center justify-center py-2 px-4 w-16 border-2  ${
             activePage === "about"

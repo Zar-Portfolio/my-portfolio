@@ -49,7 +49,7 @@ const App = () => {
           // } w-full px-10 lg:px-20 z-10 2xl:px-40`}
           className="relativew-full px-10 lg:px-20 z-10 2xl:px-40`"
         >
-          <div className="flex items-center justify-between pt-10">
+          <div className="flex items-center justify-center pt-10">
             <div className="flex flex-row items-center gap-2">
               <img src={LOGO} alt="" className="w-16 lg:w-24 z-30" />
               <div>
@@ -68,7 +68,7 @@ const App = () => {
                 </p>
               </div>
             </div>
-            <Button
+            {/* <Button
               color={`bg-white hover:scale-110 z-30 ${
                 darkMode === "light" ? " border-black" : "border-[#ff9901] "
               }`}
@@ -87,7 +87,7 @@ const App = () => {
                 />
               }
               name=""
-            />
+            /> */}
           </div>
 
           <Dashboard darkMode={darkMode} />
