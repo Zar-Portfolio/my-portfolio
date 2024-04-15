@@ -1,5 +1,5 @@
 import React from "react";
-import UC from "../../../assets/uc.png";
+import UC from "../../assets/uc.png";
 
 const Education = () => {
   return (

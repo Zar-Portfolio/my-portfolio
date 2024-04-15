@@ -1,21 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { APPDEV, BACKEND, FRONTEND, UXDESIGNER } from "../../assets/icons";
+import { APPDEV, BACKEND, FRONTEND, UXDESIGNER } from "../assets/icons";
 import { TypeAnimation } from "react-type-animation";
-import { ABOUT } from "../../assets/menu-icon";
+import { ABOUT } from "../assets/menu-icon";
 import ProgressLine from "./ProgressLine";
-import GetScreenSize from "../GetScreenSize";
-import ScrollToContent from "../ScrollToContent";
+import ScrollToContent from "../components/ScrollToContent";
+import GetScreenSize from "../components/GetScreenSize";
+import AboutMe from "./about/AboutMe";
 
 const About = ({ scrollNow, setScrollNow }) => {
-  const [show, setShow] = useState(false);
   const [scroll, setScroll] = useState(false);
   const screenSize = GetScreenSize();
-
-  useEffect(() => {
-    setTimeout(() => {
-      setShow(true);
-    }, 1000);
-  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", isScroll);
@@ -26,10 +20,10 @@ const About = ({ scrollNow, setScrollNow }) => {
 
   const isScroll = () => {
     const scrollTop = window.scrollY;
-    scrollTop >= 450 ? setScroll(true) : setScroll(false), setScrollNow(false);
+    scrollTop >= 150 ? setScroll(true) : setScroll(false), setScrollNow(false);
   };
 
-  screenSize.width >= 600 ? "" : scrollNow ? ScrollToContent() : "";
+  screenSize.width <= 600 ? "" : scrollNow ? ScrollToContent() : "";
 
   return (
     <div className="p-6">
@@ -51,47 +45,7 @@ const About = ({ scrollNow, setScrollNow }) => {
       </div>
 
       <div className="animate__animated animate__fadeInUp mt-2">
-        {show ? (
-          <TypeAnimation
-            sequence={[
-              "Hello I'm a Full Stack Developer.",
-              1000,
-              "I can do Frontend Development.",
-              1000,
-              "I can do Backend Development.",
-              1000,
-              "I can do UX Design.",
-              1000,
-              "I can do App Development.",
-              1000,
-            ]}
-            speed={50}
-            repeat={Infinity}
-            className="font-medium md:text-xl xl:text-2xl transition-all ease-linear duration-300 dark:text-white/80"
-          />
-        ) : (
-          <div className="py-4"></div>
-        )}
-
-        <div className="mt-4">
-          <p className="text-justify text-sm xl:text-base dark:text-white/80">
-            I'm a Bachelor of Science in Information Technology Graduate at
-            University of Cebu Lapu-Lapu and Mandaue (UCLM).
-          </p>
-
-          <p className="text-justify text-sm xl:text-base mt-3 dark:text-white/80">
-            A very ambitious developer. I love to code because if I can think
-            it, I can make it a reality.
-          </p>
-
-          <p className="text-justify text-sm xl:text-base mt-3 dark:text-white/80">
-            Also a competitive coder with an amazing ability to develop websites
-            that are both functional and aesthetically pleasing. I have a strong
-            understanding of web standards and best practices, and I am
-            passionate about creating websites that users will find easy to use
-            and visually appealing.
-          </p>
-        </div>
+        <AboutMe />
         <div className="mt-4">
           <h1 className="text-xl font-bold mb-2 dark:text-white/80">
             What I Do!

@@ -24,7 +24,6 @@ const ParticlesComponent = (props) => {
           value: "#ffffff0",
         },
       },
-      fpsLimit: 120,
       interactivity: {
         events: {
           onClick: {
@@ -51,7 +50,7 @@ const ParticlesComponent = (props) => {
           value: "#373030",
         },
         links: {
-          color: "#00d0ff",
+          value: ["#2EB67D", "#ECB22E", "#E01E5B", "#36C5F0"],
           distance: 150,
           enable: true,
           opacity: 1,
@@ -68,10 +67,11 @@ const ParticlesComponent = (props) => {
           straight: false,
         },
         number: {
+          value: 80,
           density: {
             enable: true,
+            area: 800,
           },
-          value: 200,
         },
         opacity: {
           value: 1,
@@ -80,7 +80,7 @@ const ParticlesComponent = (props) => {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 3 },
+          value: { min: 1, max: 8 },
         },
       },
       detectRetina: true,
@@ -95,7 +95,7 @@ const ParticlesComponent = (props) => {
           value: "#ffffff0",
         },
       },
-      fpsLimit: 120,
+      fpsLimit: 30,
       interactivity: {
         events: {
           onClick: {

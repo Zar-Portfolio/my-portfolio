@@ -1,6 +1,6 @@
 import React from "react";
-import { WORKS } from "../../assets/menu-icon";
 import { TypeAnimation } from "react-type-animation";
+import { WORKS } from "../assets/menu-icon";
 
 const Works = () => {
   return (

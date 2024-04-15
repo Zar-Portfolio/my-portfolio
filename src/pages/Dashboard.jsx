@@ -1,16 +1,17 @@
 import React, { useState } from "react";
-import About from "./About.jsx";
+
+// Components
+import Profile from "../components/profile/index.jsx";
+import Footer from "../components/Footer.jsx";
+import Menu from "../components/Menu.jsx";
+import FloatingMobileMenu from "../components/FloatingMobileMenu.jsx";
+
+// Pages
+import About from "./about/index.jsx";
+import Resume from "./resume/index.jsx";
 import Works from "./Works.jsx";
 import Blogs from "./About.jsx";
 import Contact from "./About.jsx";
-import Profile from "../profile/index.jsx";
-import Footer from "../Footer.jsx";
-import Menu from "../Menu.jsx";
-import { AiOutlineMenu } from "react-icons/ai";
-import FloatingMobileMenu from "../FloatingMobileMenu.jsx";
-
-// Pages
-import Resume from "./resume/index.jsx";
 
 // Icons
 import { IoPersonOutline } from "react-icons/io5";
@@ -18,6 +19,7 @@ import { FiFileText } from "react-icons/fi";
 import { SlBriefcase } from "react-icons/sl";
 import { TbBrandBlogger } from "react-icons/tb";
 import { TiContacts } from "react-icons/ti";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const Dashboard = ({ darkMode }) => {
   const [activePage, setActivePage] = useState("about");
@@ -41,9 +43,9 @@ const Dashboard = ({ darkMode }) => {
     }
   };
   return (
-    <div className="relative py-[120px] md:py-[52px] xl:py-32">
+    <div className="relative py-[120px] md:py-[52px] xl:py-32 z-10">
       <div className="flex items-center justify-end mb-4">
-        <div className="hidden md:flex xl:hidden flex-row items-center gap-2 z-1-">
+        <div className="hidden md:flex xl:hidden flex-row items-center gap-2">
           <div
             className={`py-2 menu ${
               grow ? "md:w-[330px] lg:w-[450px]" : "w-0"
