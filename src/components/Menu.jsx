@@ -5,7 +5,7 @@ import { SlBriefcase } from "react-icons/sl";
 import { TbBrandBlogger } from "react-icons/tb";
 import { TiContacts } from "react-icons/ti";
 
-const Menu = ({ activePage, setActivePage, darkMode }) => {
+const Menu = ({ activePage, setActivePage }) => {
   return (
     <div className="p-6">
       <div className="flex flex-col items-center justify-center gap-2">
@@ -15,10 +15,7 @@ const Menu = ({ activePage, setActivePage, darkMode }) => {
           }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:text-white`}
           onClick={() => setActivePage("about")}
         >
-          <IoPersonOutline
-            size={24}
-            color={`${darkMode === "dark" ? "#cecece" : ""}`}
-          />
+          <IoPersonOutline size={24} />
           <p className="font-medium text-sm dark:text-white/80">About</p>
         </div>
 
@@ -30,10 +27,7 @@ const Menu = ({ activePage, setActivePage, darkMode }) => {
           }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:text-white`}
           onClick={() => setActivePage("resume")}
         >
-          <FiFileText
-            size={24}
-            color={`${darkMode === "dark" ? "#cecece" : ""}`}
-          />
+          <FiFileText size={24} />
           <p className="font-medium text-sm dark:text-white/80">Resume</p>
         </div>
 
@@ -43,10 +37,7 @@ const Menu = ({ activePage, setActivePage, darkMode }) => {
           }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:text-white`}
           onClick={() => setActivePage("works")}
         >
-          <SlBriefcase
-            size={24}
-            color={`${darkMode === "dark" ? "#cecece" : ""}`}
-          />
+          <SlBriefcase size={24} />
           <p className="font-medium text-sm dark:text-white/80">Works</p>
         </div>
 
@@ -56,10 +47,7 @@ const Menu = ({ activePage, setActivePage, darkMode }) => {
           }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:text-white`}
           onClick={() => setActivePage("blogs")}
         >
-          <TbBrandBlogger
-            size={24}
-            color={`${darkMode === "dark" ? "#cecece" : ""}`}
-          />
+          <TbBrandBlogger size={24} />
           <p className="font-medium text-sm dark:text-white/80">Blogs</p>
         </div>
 
@@ -71,10 +59,7 @@ const Menu = ({ activePage, setActivePage, darkMode }) => {
           }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:text-white`}
           onClick={() => setActivePage("contact")}
         >
-          <TiContacts
-            size={24}
-            color={`${darkMode === "dark" ? "#cecece" : ""}`}
-          />
+          <TiContacts size={24} />
           <p className="font-medium text-sm dark:text-white/80">Contact</p>
         </div>
       </div>

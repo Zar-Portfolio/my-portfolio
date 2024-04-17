@@ -5,12 +5,7 @@ import { SlBriefcase } from "react-icons/sl";
 import { TbBrandBlogger } from "react-icons/tb";
 import { TiContacts } from "react-icons/ti";
 
-const FloatingMobileMenu = ({
-  activePage,
-  setActivePage,
-  darkMode,
-  setScrollNow,
-}) => {
+const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
   return (
     <div className="w-full block md:hidden fixed bottom-0 right-1/2 translate-x-1/2 z-50 bg-white/80 border-t-2 border-t-white/90 dark:bg-black/80 dark:border-t-black/90 shadow-md p-2">
       <div className="flex flex-row items-center justify-center gap-2 pb-2 border-b-2 border-b-white/20">
@@ -27,7 +22,7 @@ const FloatingMobileMenu = ({
         >
           <IoPersonOutline
             //className="md:text-sm text-2xl"
-            color={`${darkMode === "dark" ? "#cecece" : ""}`}
+
             className="md:text-sm lg:text-2xl"
           />
           <p className="font-medium text-[10px] dark:text-white/80">About</p>
@@ -44,10 +39,7 @@ const FloatingMobileMenu = ({
             setScrollNow(true);
           }}
         >
-          <FiFileText
-            className="md:text-sm lg:text-2xl"
-            color={`${darkMode === "dark" ? "#cecece" : ""}`}
-          />
+          <FiFileText className="md:text-sm lg:text-2xl" />
           <p className="font-medium text-[10px] dark:text-white/80">Resume</p>
         </div>
 
@@ -62,10 +54,7 @@ const FloatingMobileMenu = ({
             setScrollNow(true);
           }}
         >
-          <SlBriefcase
-            className="md:text-sm lg:text-2xl"
-            color={`${darkMode === "dark" ? "#cecece" : ""}`}
-          />
+          <SlBriefcase className="md:text-sm lg:text-2xl" />
           <p className="font-medium text-[10px] dark:text-white/80">Works</p>
         </div>
 
@@ -80,10 +69,7 @@ const FloatingMobileMenu = ({
             setScrollNow(true);
           }}
         >
-          <TbBrandBlogger
-            className="md:text-sm lg:text-2xl"
-            color={`${darkMode === "dark" ? "#cecece" : ""}`}
-          />
+          <TbBrandBlogger className="md:text-sm lg:text-2xl" />
           <p className="font-medium text-[10px] dark:text-white/80">Blogs</p>
         </div>
 
@@ -98,10 +84,7 @@ const FloatingMobileMenu = ({
             setScrollNow(true);
           }}
         >
-          <TiContacts
-            className="md:text-sm lg:text-2xl"
-            color={`${darkMode === "dark" ? "#cecece" : ""}`}
-          />
+          <TiContacts className="md:text-sm lg:text-2xl" />
           <p className="font-medium text-[10px] dark:text-white/80">Contact</p>
         </div>
       </div>

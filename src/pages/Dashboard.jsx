@@ -21,6 +21,9 @@ import { TbBrandBlogger } from "react-icons/tb";
 import { TiContacts } from "react-icons/ti";
 import { AiOutlineMenu } from "react-icons/ai";
 
+import { motion } from "framer-motion";
+import { slideInFromRight } from "../../utils/motion.js";
+
 const Dashboard = ({ darkMode }) => {
   const [activePage, setActivePage] = useState("about");
   const [grow, setGrow] = useState(false);
@@ -139,8 +142,13 @@ const Dashboard = ({ darkMode }) => {
           </button>
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row justify-between gap-5">
-        <div
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        className="w-full flex flex-col md:flex-row justify-between gap-5"
+      >
+        <motion.div
+          variants={slideInFromRight(1.5)}
           className={`${
             darkMode === "light"
               ? "glass-container-light"
@@ -148,8 +156,9 @@ const Dashboard = ({ darkMode }) => {
           } w-full lg:w-1/2 h-full rounded-md`}
         >
           <Profile />
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          variants={slideInFromRight(1.7)}
           className={`${
             darkMode === "light"
               ? "glass-container-light"
@@ -158,8 +167,9 @@ const Dashboard = ({ darkMode }) => {
         >
           {renderPage(activePage)}
           <Footer />
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          variants={slideInFromRight(1.9)}
           className={`${
             darkMode === "light"
               ? "glass-container-light"
@@ -167,8 +177,8 @@ const Dashboard = ({ darkMode }) => {
           } hidden xl:block w-1/6 h-full rounded-md`}
         >
           <Menu {...pageProps} darkMode={darkMode} />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       <FloatingMobileMenu {...pageProps} darkMode={darkMode} />
     </div>
