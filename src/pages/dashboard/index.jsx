@@ -11,13 +11,13 @@ const index = () => {
     <>
       <BlackHole />
       <div className="relative z-10">
-        <div className="absolute top-56">
+        <div className="absolute top-56 lg:top-20">
           <div className="flex flex-row items-center gap-2 px-20">
             <img src={LOGO} alt="" className="w-16 lg:w-24 z-30" />
             <div>
               <p
                 className="relative name-logo z-10 uppercase text-2xl lg:text-4xl font-bold 
-                  bg-gradient-to-r from-purple-600 via-[#33bfdf] to-blue-500 
+                  bg-gradient-to-r from-purple-500 via-[#33bfdf] to-blue-500 
                   text-transparent bg-clip-text animate-gradient [text-shadow:_2px_3px_0_rgb(0_0_0_/20%)]"
               >
                 Zardron Pesquera
