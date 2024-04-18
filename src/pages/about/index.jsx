@@ -8,6 +8,7 @@ import WhatIDo from "./WhatIDo.jsx";
 import SkillRate from "./SkillRate.jsx";
 
 const index = ({ scrollNow, setScrollNow }) => {
+  console.log(scrollNow);
   const screenSize = GetScreenSize();
 
   useEffect(() => {
@@ -25,20 +26,20 @@ const index = ({ scrollNow, setScrollNow }) => {
 
   return (
     <div className="p-6">
-      <div className="flex justify-between gap-5">
+      <div className="flex items-center justify-between gap-5">
         <div>
-          <h1 className="text-4xl font-bold tracking-tight">
+          <h1 className="text-4xl lg:text-5xl font-semibold tracking-tight">
             <TypeAnimation
               sequence={["About."]}
               speed={0.5}
               className="dark:text-white/80 "
             />
           </h1>
-          <div className="border-2 w-64 border-[#1e5799] shadow-md rounded-lg mt-3"></div>
+          <div className="border-2 w-32 sm:w-64 border-[#1e5799] shadow-md rounded-lg mt-3"></div>
         </div>
 
         <div>
-          <img src={ABOUT} className="w-16" alt="" />
+          <img src={ABOUT} className="w-20" alt="" />
         </div>
       </div>
 

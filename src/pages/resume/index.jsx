@@ -26,19 +26,19 @@ const index = ({ scrollNow, setScrollNow }) => {
   return (
     <div className="p-6">
       <div className="flex justify-between gap-5">
-        <div>
-          <h1 className="text-4xl font-bold tracking-tight">
+        <div className="w-[92%]">
+          <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
             <TypeAnimation
-              sequence={["Resume.", 1000]}
-              speed={20}
+              sequence={["Resume."]}
+              speed={0.5}
               className="dark:text-white/80 "
             />
           </h1>
           <div className="border-2 w-64 border-[#1e5799] shadow-md rounded-lg mt-3"></div>
         </div>
 
-        <div>
-          <img src={RESUME} className="w-16" alt="" />
+        <div className="w-[8%]">
+          <img src={RESUME} className="w-full" alt="" />
         </div>
       </div>
 

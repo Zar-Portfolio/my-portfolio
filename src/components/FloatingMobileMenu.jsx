@@ -23,9 +23,9 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
           <IoPersonOutline
             //className="md:text-sm text-2xl"
 
-            className="md:text-sm lg:text-2xl"
+            className="md:text-sm lg:text-2xl text-white/80"
           />
-          <p className="font-medium text-[10px] dark:text-white/80">About</p>
+          <p className="font-medium text-[10px] text-white/80">About</p>
         </div>
 
         <div
@@ -39,8 +39,8 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
             setScrollNow(true);
           }}
         >
-          <FiFileText className="md:text-sm lg:text-2xl" />
-          <p className="font-medium text-[10px] dark:text-white/80">Resume</p>
+          <FiFileText className="md:text-sm lg:text-2xl text-white/80" />
+          <p className="font-medium text-[10px] text-white/80">Resume</p>
         </div>
 
         <div
@@ -54,8 +54,8 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
             setScrollNow(true);
           }}
         >
-          <SlBriefcase className="md:text-sm lg:text-2xl" />
-          <p className="font-medium text-[10px] dark:text-white/80">Works</p>
+          <SlBriefcase className="md:text-sm lg:text-2xl text-white/80" />
+          <p className="font-medium text-[10px] text-white/80">Works</p>
         </div>
 
         <div
@@ -69,8 +69,8 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
             setScrollNow(true);
           }}
         >
-          <TbBrandBlogger className="md:text-sm lg:text-2xl" />
-          <p className="font-medium text-[10px] dark:text-white/80">Blogs</p>
+          <TbBrandBlogger className="md:text-sm lg:text-2xl text-white/80" />
+          <p className="font-medium text-[10px] text-white/80">Blogs</p>
         </div>
 
         <div
@@ -84,8 +84,8 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
             setScrollNow(true);
           }}
         >
-          <TiContacts className="md:text-sm lg:text-2xl" />
-          <p className="font-medium text-[10px] dark:text-white/80">Contact</p>
+          <TiContacts className="md:text-sm lg:text-2xl text-white/80" />
+          <p className="font-medium text-[10px] text-white/80">Contact</p>
         </div>
       </div>
     </div>

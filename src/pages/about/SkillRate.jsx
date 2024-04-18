@@ -8,7 +8,9 @@ const SkillRate = () => {
       <div className="flex px-2 py-1 gap-2 border-b border-b-gray-50/40">
         <img src={FRONTEND} alt="" className="w-14" />
         <div className="flex w-full flex-col justify-center pr-2">
-          <p className="font-semibold">Frontend Development</p>
+          <p className="text-base xl:text-lg text-white/80 mb-1">
+            Frontend Development
+          </p>
           <ProgressLine
             visualParts={[
               {
@@ -23,7 +25,7 @@ const SkillRate = () => {
       <div className="flex px-2 py-1 gap-2 border-b border-b-gray-50/40">
         <img src={UXDESIGNER} alt="" className="w-14" />
         <div className="flex w-full flex-col justify-center pr-2">
-          <p className="font-semibold">UX Designer</p>
+          <p className="text-base xl:text-lg text-white/80 mb-1">UX Designer</p>
           <ProgressLine
             visualParts={[
               {
@@ -38,7 +40,9 @@ const SkillRate = () => {
       <div className="flex px-2 py-1 gap-2 border-b border-b-gray-50/40">
         <img src={BACKEND} alt="" className="w-14" />
         <div className="flex w-full flex-col justify-center pr-2">
-          <p className="font-semibold">Backend Development</p>
+          <p className="text-base xl:text-lg text-white/80 mb-1">
+            Backend Development
+          </p>
           <ProgressLine
             visualParts={[
               {
@@ -53,7 +57,9 @@ const SkillRate = () => {
       <div className="flex px-2 py-1 gap-2">
         <img src={APPDEV} alt="" className="w-14" />
         <div className="flex w-full flex-col justify-center pr-2">
-          <p className="font-semibold">App Development</p>
+          <p className="text-base xl:text-lg text-white/80 mb-1">
+            App Development
+          </p>
           <ProgressLine
             visualParts={[
               {

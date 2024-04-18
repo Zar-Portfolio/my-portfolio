@@ -27,7 +27,7 @@ const AboutMe = () => {
           ]}
           speed={50}
           repeat={Infinity}
-          className="font-medium md:text-xl xl:text-2xl transition-all ease-linear duration-300 dark:text-white/80"
+          className="md:text-xl xl:text-2xl transition-all ease-linear duration-300 dark:text-white/80"
         />
       ) : (
         <div className="py-4"></div>

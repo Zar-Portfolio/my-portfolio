@@ -8,7 +8,7 @@ import {
 
 const SocialMedia = () => {
   return (
-    <div className="flex items-center justify-center mt-2 ">
+    <div className="flex items-center justify-center mt-3 mb-6 ">
       <div className="flex items-center justify-center gap-2 px-4">
         <img
           src={FACEBOOK}

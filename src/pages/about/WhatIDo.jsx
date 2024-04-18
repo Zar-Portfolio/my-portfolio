@@ -4,16 +4,18 @@ import { APPDEV, BACKEND, FRONTEND, UXDESIGNER } from "../../assets/icons";
 const WhatIDo = () => {
   return (
     <div className="mt-4">
-      <h1 className="text-xl font-bold mb-2 dark:text-white/80">What I Do!</h1>
+      <h1 className="text-2xl font-bold mb-2 dark:text-white/80">What I Do!</h1>
 
       <div className="w-full flex flex-col lg:flex-row gap-2 ">
         <div className="flex flex-1 gap-2 bg-orange-100/80 p-4 rounded-md h-full">
           <div className="w-[20%]">
             <img src={FRONTEND} alt="" className="w-[500px]" />
           </div>
-          <div className="flex w-[80%] flex-col">
-            <p className="font-semibold">Frontend Development</p>
-            <p className="text-sm md:text-xs xl:text-sm ">
+          <div className="flex w-[80%] flex-col justify-center gap-1">
+            <p className="font-semibold text-base xl:text-lg">
+              Frontend Development
+            </p>
+            <p className="text-sm md:text-xs xl:text-base ">
               Creating the layout, designs and functionality of websites that
               users interact with directly.
               {/* I use languages like HTML, CSS, and JavaScript to build and
@@ -27,11 +29,11 @@ const WhatIDo = () => {
           <div className="w-[20%]">
             <img src={BACKEND} alt="" className="w-[500px]" />
           </div>
-          <div className="flex w-[80%] flex-col">
-            <p className="font-semibold dark:text-white/80">
+          <div className="flex w-[80%] flex-col justify-center gap-1">
+            <p className="font-semibold text-base xl:text-lg dark:text-white/80">
               Backend Development
             </p>
-            <p className="text-sm md:text-xs xl:text-sm dark:text-white/80">
+            <p className="text-sm md:text-xs xl:text-base dark:text-white/80">
               Focus on the server-side logic and database management of web
               applications.
               {/* I work with languages like Node.js, or PHP to
@@ -48,9 +50,11 @@ const WhatIDo = () => {
           <div className="w-[20%]">
             <img src={UXDESIGNER} alt="" className="w-[500px]" />
           </div>
-          <div className="flex w-[80%] flex-col">
-            <p className="font-semibold dark:text-white/80">UX Design</p>
-            <p className="text-sm md:text-xs xl:text-sm dark:text-white/80">
+          <div className="flex w-[80%] flex-col justify-center gap-1">
+            <p className="font-semibold text-base xl:text-lg dark:text-white/80">
+              UX Design
+            </p>
+            <p className="text-sm md:text-xs xl:text-base dark:text-white/80">
               Creating meaningful and enjoyable experience for users interacting
               with digital products or services.
               {/* This involves
@@ -66,9 +70,11 @@ const WhatIDo = () => {
           <div className="w-[20%]">
             <img src={APPDEV} alt="" className="w-[500px]" />
           </div>
-          <div className="flex w-[80%] flex-col">
-            <p className="font-semibold">App Development</p>
-            <p className="text-sm md:text-xs xl:text-sm">
+          <div className="flex w-[80%] flex-col justify-center gap-1">
+            <p className="font-semibold text-base xl:text-lg">
+              App Development
+            </p>
+            <p className="text-sm md:text-xs xl:text-base">
               I design, build, and deploy software app for various platforms
               such as mobile, desktops, or web browsers.
               {/* This process typically involves several stages, including
