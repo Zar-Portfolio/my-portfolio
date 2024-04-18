@@ -45,7 +45,7 @@ const index = () => {
       <BlackHole />
       <div className="relative h-full pb-28 pt-[300px] z-[30] px-10 lg:px-20 overflow-x-hidden">
         <div className="absolute top-20 right-0 left-0 mx-auto lg:right-auto lg:left-auto">
-          <div className="flex flex-row items-center gap-2">
+          <div className="flex flex-col justify-center lg:flex-row items-center gap-2 px-10 lg:px-20">
             <img src={LOGO} alt="" className="w-16 lg:w-24 z-30" />
             <div>
               <p
