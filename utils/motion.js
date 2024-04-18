@@ -27,12 +27,12 @@ export function slideInFromRight(delay) {
 }
 
 export const slideInFromTop = {
-  hidden: { y: -100, opacity: 0 },
+  hidden: { y: -200, opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
     transition: {
-      delay: 0.5,
+      delay: 2,
       duration: 0.5,
     },
   },

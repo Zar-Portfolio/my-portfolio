@@ -28,7 +28,7 @@ const HeroContent = () => {
           </motion.div>
 
           <motion.div
-            variants={slideInFromLeft(1.5)}
+            variants={slideInFromLeft(2)}
             className="flex flex-col gap-6 mt-6 text-4xl 2xl:text-6xl font-bold text-white lg:max-w-[400px] 2xl:max-w-[550px] w-auto h-auto"
           >
             <span>
@@ -42,7 +42,7 @@ const HeroContent = () => {
           </motion.div>
 
           <motion.div
-            variants={slideInFromLeft(1.8)}
+            variants={slideInFromLeft(2.2)}
             className="text-left lg:text-justify text-base 2xl:text-lg text-gray-400 my-3 2xl:my-5 max-w-[350px] 2xl:max-w-[500px]"
           >
             I&apos;m a Full Stack Developer with experience in Website, Mobile
@@ -50,7 +50,7 @@ const HeroContent = () => {
             <p className="mt-4">Check out my projects and skills.</p>
           </motion.div>
 
-          <motion.div variants={slideInFromLeft(2)} className="relative mt-2">
+          <motion.div variants={slideInFromLeft(2.2)} className="relative mt-2">
             <Link
               to="/dashboard"
               className=" button-primary py-4 px-10 px-6text-center text-white cursor-pointer rounded-lg max-w-[200px]"
@@ -61,7 +61,7 @@ const HeroContent = () => {
         </div>
 
         <motion.div
-          variants={slideInFromRight(1.8)}
+          variants={slideInFromRight(2.4)}
           className="hidden w-full h-full lg:flex justify-end items-center mt-10"
         >
           <img
