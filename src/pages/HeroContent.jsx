@@ -14,9 +14,9 @@ const HeroContent = () => {
       <motion.div
         initial="hidden"
         animate="visible"
-        className="h-screen flex flex-row items-center justify-center px-20 w-full"
+        className="h-screen flex flex-row items-center justify-center px-10 lg:px-20 w-full"
       >
-        <div className="h-full w-full flex flex-col gap-4 2xl:gap-3 justify-center m-auto text-start">
+        <div className="h-full w-full flex flex-col gap-6 2xl:gap-3 justify-center m-auto text-start">
           <motion.div
             variants={slideInFromTop}
             className="Welcome-box py-[8px] px-[14px] border border-[#7042f88b] opacity-[0.9]"
@@ -50,7 +50,7 @@ const HeroContent = () => {
             <p className="mt-4">Check out my projects and skills.</p>
           </motion.div>
 
-          <motion.div variants={slideInFromLeft(2)} className="relative">
+          <motion.div variants={slideInFromLeft(2)} className="relative mt-2">
             <Link
               to="/dashboard"
               className=" button-primary py-4 px-10 px-6text-center text-white cursor-pointer rounded-lg max-w-[200px]"
