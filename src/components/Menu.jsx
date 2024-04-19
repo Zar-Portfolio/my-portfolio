@@ -15,8 +15,8 @@ const Menu = ({ activePage, setActivePage }) => {
           }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:text-white`}
           onClick={() => setActivePage("about")}
         >
-          <IoPersonOutline size={24} />
-          <p className="font-medium text-sm dark:text-white/80">About</p>
+          <IoPersonOutline size={24} className="text-white" />
+          <p className="font-medium text-sm text-white/80">About</p>
         </div>
 
         <div
@@ -27,8 +27,8 @@ const Menu = ({ activePage, setActivePage }) => {
           }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:text-white`}
           onClick={() => setActivePage("resume")}
         >
-          <FiFileText size={24} />
-          <p className="font-medium text-sm dark:text-white/80">Resume</p>
+          <FiFileText size={24} className="text-white" />
+          <p className="font-medium text-sm text-white/80">Resume</p>
         </div>
 
         <div
@@ -37,8 +37,8 @@ const Menu = ({ activePage, setActivePage }) => {
           }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:text-white`}
           onClick={() => setActivePage("works")}
         >
-          <SlBriefcase size={24} />
-          <p className="font-medium text-sm dark:text-white/80">Works</p>
+          <SlBriefcase size={24} className="text-white" />
+          <p className="font-medium text-sm text-white/80">Works</p>
         </div>
 
         <div
@@ -47,8 +47,8 @@ const Menu = ({ activePage, setActivePage }) => {
           }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:text-white`}
           onClick={() => setActivePage("blogs")}
         >
-          <TbBrandBlogger size={24} />
-          <p className="font-medium text-sm dark:text-white/80">Blogs</p>
+          <TbBrandBlogger size={24} className="text-white" />
+          <p className="font-medium text-sm text-white/80">Blogs</p>
         </div>
 
         <div
@@ -59,8 +59,8 @@ const Menu = ({ activePage, setActivePage }) => {
           }  rounded-md cursor-pointer hover:bg-[#1e5799] hover:text-white`}
           onClick={() => setActivePage("contact")}
         >
-          <TiContacts size={24} />
-          <p className="font-medium text-sm dark:text-white/80">Contact</p>
+          <TiContacts size={24} className="text-white" />
+          <p className="font-medium text-sm text-white/80">Contact</p>
         </div>
       </div>
     </div>

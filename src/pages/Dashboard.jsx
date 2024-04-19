@@ -26,7 +26,7 @@ import { slideInFromRight } from "../../utils/motion.js";
 
 const Dashboard = ({ darkMode }) => {
   const [activePage, setActivePage] = useState("about");
-  const [grow, setGrow] = useState(false);
+  const [grow, setGrow] = useState(true);
   const [scrollNow, setScrollNow] = useState(false);
 
   const pageProps = { activePage, setActivePage, scrollNow, setScrollNow };
@@ -153,7 +153,7 @@ const Dashboard = ({ darkMode }) => {
             darkMode === "light"
               ? "glass-container-light"
               : "glass-container-dark"
-          } w-full lg:w-1/2 h-full rounded-md`}
+          } w-full lg:[80%] h-full rounded-md`}
         >
           <Profile />
         </motion.div>
