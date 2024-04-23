@@ -9,7 +9,6 @@ const App = () => {
   return (
     <div className="h-full w-full bg-[#030014]">
       <StarsCanvas />
-      <Transition />
 
       <BrowserRouter>
         <Routes>

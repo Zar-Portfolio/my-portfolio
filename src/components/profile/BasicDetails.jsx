@@ -11,7 +11,7 @@ const BasicDetails = () => {
         </div>
 
         <div className="w-[80%]">
-          <p className="text-xs tracking-tight uppercase dark:text-white/80">
+          <p className="text-xs tracking-tight uppercase text-white font-medium">
             Mobile
           </p>
           <p className="text-[11px] sm:text-base md:text-[12px] xl:text-sm font-light tracking-tight dark:text-white/80">
@@ -26,7 +26,7 @@ const BasicDetails = () => {
         </div>
 
         <div>
-          <p className="text-xs  tracking-tight uppercase dark:text-white/80">
+          <p className="text-xs tracking-tight uppercase text-white font-medium">
             Email
           </p>
           <p className="text-[11px] sm:text-base md:text-[12px] xl:text-sm font-light tracking-tight dark:text-white/80">
@@ -41,7 +41,7 @@ const BasicDetails = () => {
         </div>
 
         <div className="w-[80%]">
-          <p className="text-xs tracking-tight uppercase dark:text-white/80">
+          <p className="text-xs tracking-tight uppercase text-white font-medium">
             Location
           </p>
           <p className="text-[11px] sm:text-base md:text-[12px] xl:text-sm font-light tracking-tight dark:text-white/80">
@@ -56,7 +56,7 @@ const BasicDetails = () => {
         </div>
 
         <div className="w-[80%]">
-          <p className="text-xs tracking-tight uppercase dark:text-white/80">
+          <p className="text-xs tracking-tight uppercase text-white font-medium">
             Birthday
           </p>
           <p className="text-[11px] sm:text-base md:text-[12px] xl:text-sm font-light tracking-tight dark:text-white/80">

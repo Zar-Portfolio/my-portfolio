@@ -1,5 +1,5 @@
 const ScrollToContent = () => {
-  return window.scroll({ top: 880, left: 0, behavior: "smooth" });
+  return window.scroll({ top: 0, left: 0, behavior: "smooth" });
 };
 
 export default ScrollToContent;

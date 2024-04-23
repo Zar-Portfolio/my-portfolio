@@ -14,16 +14,16 @@ const Education = () => {
         </div>
 
         <div className="w-[85%]">
-          <p className="text-white/80 text-[12px] sm:text-[12px] lg:text-sm 2xl:text-lg font-medium">
-            University of Cebu Lapu-Lapu and Mandaue
+          <p className="text-white/80 text-[10px] sm:text-[12px] lg:text-sm 2xl:text-lg font-medium">
+            University of Cebu - LM
           </p>
-          <p className="text-white/80 text-[10px] sm:text-[12px] lg:text-base font-light">
+          <p className="text-white/80 text-[8px] sm:text-[12px] lg:text-base font-light">
             Cebu, Philippines
           </p>
-          <p className="text-white/80 text-[10px] sm:text-[10px] md:text-sm font-light">
-            Bachelor of Science in Information Technology (BSIT)
+          <p className="text-white/80 text-[8px] sm:text-[10px] md:text-sm font-light">
+            BS - Information Technology (BSIT)
           </p>
-          <p className="text-white/80 text-[10px] sm:text-[10px] md:text-sm font-light">
+          <p className="text-white/80 text-[8px] sm:text-[10px] md:text-sm font-light">
             March 2020
           </p>
         </div>

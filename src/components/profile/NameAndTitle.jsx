@@ -3,7 +3,7 @@ import React from "react";
 const NameAndTitle = () => {
   return (
     <>
-      <p className="font-semibold text-xl text-center dark:text-white/80">
+      <p className="font-semibold text-xl text-center text-white">
         Zardron Angelo G. Pesquera
       </p>
       <div className="flex items-center justify-center">

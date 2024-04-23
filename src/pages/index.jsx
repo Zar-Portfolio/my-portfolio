@@ -2,10 +2,12 @@ import React from "react";
 import LOGO from "../assets/logo2.png";
 import HeroContent from "./HeroContent";
 import BlackHoleMiddle from "../components/BlackHoleMiddle";
+import Transition from "../components/Transition";
 
 const index = () => {
   return (
     <>
+      <Transition />
       <div className="relative overflow-hidden">
         <div className="absolute top-20 right-0 left-0 mx-auto lg:right-auto lg:left-auto">
           <div className="flex flex-col justify-center lg:flex-row items-center gap-2 px-10 lg:px-20">
